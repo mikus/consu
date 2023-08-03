@@ -179,7 +179,7 @@ func Checksum(hf HashFunc, v interface{}) []byte {
 		}
 
 		if rv.Type() == reflect.TypeOf(time.Time{}) {
-			v := []interface{}{"time.Time", rv.Interface().(time.Time).Nanosecond()}
+			v := []interface{}{"time.Time", rv.Interface().(time.Time).UnixNano()}
 			return Checksum(hf, v)
 		}
 
