@@ -14,7 +14,7 @@ Sample usage:
 
 	import (
 		"fmt"
-		"github.com/btnguyen2k/consu/checksum"
+		"github.com/mikus/consu/checksum"
 	)
 
 	func main() {

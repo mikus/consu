@@ -1,16 +1,16 @@
 # consu/checksum
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/btnguyen2k/consu)](https://goreportcard.com/report/github.com/btnguyen2k/consu)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/btnguyen2k/consu/checksum)](https://pkg.go.dev/github.com/btnguyen2k/consu/checksum)
-[![Actions Status](https://github.com/btnguyen2k/consu/workflows/checksum/badge.svg)](https://github.com/btnguyen2k/consu/actions)
-[![codecov](https://codecov.io/gh/btnguyen2k/consu/branch/checksum/graph/badge.svg?token=PWSL21DE1D)](https://app.codecov.io/gh/btnguyen2k/consu/tree/checksum/checksum)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mikus/consu)](https://goreportcard.com/report/github.com/mikus/consu)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/mikus/consu/checksum)](https://pkg.go.dev/github.com/mikus/consu/checksum)
+[![Actions Status](https://github.com/mikus/consu/workflows/checksum/badge.svg)](https://github.com/mikus/consu/actions)
+[![codecov](https://codecov.io/gh/mikus/consu/branch/checksum/graph/badge.svg?token=PWSL21DE1D)](https://app.codecov.io/gh/mikus/consu/tree/checksum/checksum)
 
 Package `checksum` provides utility functions to calculate checksum.
 
 ## Installation
 
 ```shell
-$ go get -u github.com/btnguyen2k/consu/checksum
+$ go get -u github.com/mikus/consu/checksum
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/btnguyen2k/consu/checksum"
+	"github.com/mikus/consu/checksum"
 )
 
 func main() {
@@ -58,6 +58,10 @@ but `checksum(map[string]int{"a":1,"b":2}) != checksum(map[string]int{"x":1,"y":
 
 
 ## History
+
+### 2023-08-03 - v0.1.3
+
+Use `UnixNano()` method instead of `Nanoseconds()` for `time.Time`.
 
 ### 2020-11-20 - v0.1.2
 
